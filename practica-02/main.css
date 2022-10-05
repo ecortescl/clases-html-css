@@ -1,0 +1,101 @@
+:root {
+    --blue: #1e90ff;
+    --red: #6e0c0c;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+#bg-header {
+    background-color: red;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+    margin: 25px;
+    border: dashed 10px var(--red);
+}
+
+.bg-dark {
+    background-image: url(https://img.freepik.com/fotos-premium/banner-ocultar-cachorro-perro-sorprendido-divertido-aislado-amarillo_77749-307.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    padding: 25px;
+    margin: 25px;
+    border: dashed 10px var(--red)
+}
+
+.container {
+    background-color: #c1c1c1;
+    width: 50%;
+    margin: auto;
+    color: #fff;
+    padding: 25px;
+    border: dashed 10px var(--red);
+}
+
+.card {
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    animation-name: perro;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 20px 20px;
+}
+
+.pd {
+    padding: 10px;
+}
+
+.bg-footer {
+    background-color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    padding: 25px;
+    margin: 25px;
+    border: dashed 10px var(--red);
+}
+
+@keyframes perro {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
